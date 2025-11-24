@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interstellar Explorer</title>
+    <link rel="stylesheet" href="interstellar.css">
+    <script src="interstellar.js" defer></script>
+</head>
+<body>
+    <header>
+        <h2>STELLAR EXPLORER</h2>
+        <ul>
+            <li type="none"><a href="#fact">Fact Of Specific Day</a></li>
+            <li type="none"><a href="#gallery">Gallery</a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <div class="margin">
+                <h1>Today's Astronomy Fact</h1>
+                <div id="daily-update">
+                    <img id="daily-image">
+                    <div id="daily-fact">
+                        <p id="today's-date"></p>
+                        <p id="daily-explanation"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="fact"></div>
+        </section>
+        <section>
+            <div class="margin">
+                <h1>Fact Of Specific Day</h1>
+                <form>
+                    <label for="calender">Choose a date</label>
+                    <input type="date" id="calender" min="1995-06-20" onchange="specific_event_info(this)">
+                </form>
+                <div id="particular-event">
+                    <img id="particular-event-img">
+                    <p id="particular-event-explanation"></p>
+                </div>
+            </div>
+            <div id="gallery"></div>
+        </section>
+        <button id="top" onclick="scroll1()"><b>v</b></button>
+        <section>
+            <div class="margin">
+                <h1>Gallery</h1>
+                <div id="all-images"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
